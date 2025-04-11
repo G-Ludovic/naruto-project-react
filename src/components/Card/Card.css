@@ -1,23 +1,4 @@
-.cadre {
-    display: flex;
-    flex-direction: column;
-    word-wrap: normal;
-}
-
-/* img {
-    display: flex;
-    max-height: 200px;
-    max-width: auto;
-    object-fit: cover;
-    border-radius: 5% 5% 0 0;
-} */
 
 
 
-/* Desktop : 3 colonnes */
-@media (min-width: 768px) and (min-width: 1024px) {
-    .app {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: minmax(150px, 180px);
-    }
-}
+

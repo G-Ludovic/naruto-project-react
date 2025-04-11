@@ -1,6 +1,15 @@
 function RegisterPage() {
     return (
-        <h1>Registre :</h1>
+        <>
+        <h1>Créer votre compte :</h1>
+
+        <form>
+            <>
+            <label for="nom">Nom : </label>
+            <input type="text" id="nom" name="nom" required ></input>
+            </>
+        </form>
+        </>
     )
 }
 

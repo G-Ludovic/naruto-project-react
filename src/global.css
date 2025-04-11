@@ -5,3 +5,23 @@
 body {
   margin: 0;
 }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 15vh;
+  background-color: #ebded4;
+}
+
+.header-nav {
+  padding: 16px 16px;
+  display: flex;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  
+}
