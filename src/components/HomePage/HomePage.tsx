@@ -21,8 +21,8 @@ function HomePage() {
 
     return (
         <>
-        <h1 className='liste'>Liste des personnages :</h1>
-        <main>
+        <h1 className='liste-h1'>Liste des personnages :</h1>
+        <main className='app-main'>
             <figure className='cadre'>
             {narutoData.map((el) => {
                 return (

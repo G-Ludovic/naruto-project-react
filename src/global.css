@@ -6,22 +6,50 @@ body {
   margin: 0;
 }
 
+/*** Header ***/
+
 header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  height: 15vh;
-  background-color: #ebded4;
+  justify-content: end;
+  background-color: #b3aba5;
+
+  nav {
+    display: flex;
+    gap: 1rem;
+    padding: 0 1rem 0;
+    justify-content: center;
+  }
+
+  a {
+    text-decoration: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    font-weight: bold;
+    font-size: large;
+  }
 }
 
-.header-nav {
-  padding: 16px 16px;
-  display: flex;
-  align-items: center;
-}
+/*** Main ***/
 
 main {
   display: flex;
-  flex-direction: column;
-  
+  flex-direction: column; /* mode mobile par défaut */
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 16px;
+  justify-content: center;
+}
+
+/*** Footer ***/
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  background-color: #b3aba5;
+
+  p {
+    padding: 0 16px 0 0;
+  }
 }

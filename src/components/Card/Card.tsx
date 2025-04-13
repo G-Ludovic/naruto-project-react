@@ -8,7 +8,7 @@ interface CardPops {
 function Card({ name, images }: CardPops) {
 
     return (
-        <figure>
+        <figure className="figure-card">
         <img src={images} alt={name}/>
         </figure>
     )
