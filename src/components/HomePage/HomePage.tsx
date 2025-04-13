@@ -10,14 +10,15 @@ interface CardData {
 
 function HomePage() {
 
-    const [narutoData, setNarutoData] = useState<CardData[]>([]);
-    console.log(narutoData)
-
+  const [narutoData, setNarutoData] = useState<CardData[]>([]);
+    
   useEffect(() => {
     fetch("https://dattebayo-api.onrender.com/characters")
       .then((response) => response.json())
       .then((data) => setNarutoData(data.characters))
   }, [])
+
+  console.log(narutoData)
 
     return (
         <>
@@ -25,13 +26,14 @@ function HomePage() {
         <main className='app-main'>
             <figure className='cadre'>
             {narutoData.map((el) => {
+
                 return (
-                    <Card key={el.id} name={el.name} images={el.images}/>
+                    <Card key={el.id} name={el.name} images={el.images[0]}/>
                 )
-                })}
-                </figure>
+                }).filter(el => el.key !== "515")}
+            </figure>
         </main>
-</>
+        </>
     )
 }
 
