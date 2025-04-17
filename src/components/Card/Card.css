@@ -1,0 +1,14 @@
+figure {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    img {
+        display: flex;
+        max-height: 145px;
+        max-width: 150px;
+        object-fit: cover;
+    }
+}
+
+
